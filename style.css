@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 15px;
+  background-color: rgb(224, 224, 224);
+  font-family: "frederica";
+  font-size: 20px;
+  font-weight: none;
+}
+article {
+  padding: 15px;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px rgb(197, 197, 197);
+}
+h1 {
+  text-transform: uppercase;
+  border-bottom: 2px solid rgb(189, 189, 189);
+  padding-bottom: 10px;
+}
+.scale {
+  transition: 1s;
+}
+.scale:hover {
+  transform: scale(1.2);
+}
+img {
+  border-radius: 15px;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.fourth {
+  border-color: black;
+  color: black;
+  background-image: linear-gradient(45deg, BLACK 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
+  float: right;
+}
+.fourth:hover {
+  background-position: 0;
+}
+#t1 {
+  float: left;
+  width: 50%;
+}
+#t2 {
+  float: right;
+  width: 50%;
+}
+@font-face {
+  font-family: "frederica";
+  src: url(fredericka-the-great-v15-latin-regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+.image {
+  height: 400px;
+  width: 28.33%;
+  float: left;
+  margin: 2.5%;
+  background-size: cover;
+  background-position: center;
+}
+.image1 {
+  width: 330px;
+  height: 330px;
+  background-image: url("codepen.png");
+}
+.image2 {
+  width: 330px;
+  height: 330px;
+  background-image: url("linkedin.png");
+}
+.image3 {
+  width: 330px;
+  height: 330px;
+  background-image: url("github3.png");
+}
+.p1,
+.p2 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
