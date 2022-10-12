@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "frederica";
+  src: url(fonts/fredericka-the-great-v15-latin-regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}

@@ -1,12 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-@font-face {
-  font-family: "frederica";
-  src: url(fredericka-the-great-v15-latin-regular.ttf);
-  /*   font-style: normal;
-    font-weight: normal; */
-}
+@import url(components/buttons.css);
+@import url(global.css);
+
 body {
   margin: 15px;
   background-color: rgb(224, 224, 224);
@@ -14,18 +8,25 @@ body {
   font-size: 20px;
   font-weight: none;
 }
-.second_a,
-.third_a,
-.fourth_a,
-.first_a {
+
+article {
   padding: 15px;
   background-color: rgb(241, 241, 241);
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 2px 2px rgb(197, 197, 197);
 }
+.article__header_black {
+  background-color: rgb(52, 52, 52);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 h1 {
   text-transform: uppercase;
+  color: rgb(241, 241, 241);
+}
+.ul {
   border-bottom: 2px solid rgb(189, 189, 189);
   padding-bottom: 10px;
 }
@@ -38,59 +39,6 @@ h1 {
   transform: scale(1.2);
 }
 
-.btn {
-  box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: transparent;
-  border: 2px solid #e74c3c;
-  border-radius: 0.6em;
-  color: #e74c3c;
-  cursor: pointer;
-  display: flex;
-  align-self: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1;
-  margin-top: 0px;
-  margin-left: 5px;
-  margin-right: 5px;
-  padding: 1.2em 2.8em;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-}
-.btn:hover,
-.btn:focus {
-  color: #fff;
-  outline: 0;
-}
-
-.fourth {
-  border-color: black;
-  color: black;
-  background-image: linear-gradient(45deg, BLACK 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  transition: background 300ms ease-in-out;
-}
-.fourth:hover {
-  background-position: 0;
-}
-.fifth {
-  border-color: black;
-  color: black;
-  background-image: linear-gradient(45deg, BLACK 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  transition: background 300ms ease-in-out;
-}
-.fifth:hover {
-  background-position: 0;
-}
 #t1 {
   float: left;
   width: 50%;
@@ -106,16 +54,7 @@ h1 {
   text-decoration: underline;
 }
 
-/* .nav1 {
-  position: relative;
-  left: 700px;
-} */
-
-ul li {
-  display: inline-block;
-}
-.flexdiv,
-.flexdiv1 {
+.flexdiv {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
