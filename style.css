@@ -1,5 +1,6 @@
 @import url(components/buttons.css);
 @import url(global.css);
+@import url(components/skills.css);
 
 body {
   margin: 15px;
@@ -21,7 +22,19 @@ article {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  font-size: 14px;
 }
+.article__header_black:hover {
+  transition-property: font-size;
+  transition-duration: 2s;
+  transition-delay: 1s;
+  font-size: 20px;
+}
+
 h1 {
   text-transform: uppercase;
   color: rgb(241, 241, 241);
@@ -34,9 +47,10 @@ h1 {
 .scale {
   transition: 1s;
   border-radius: 15px;
+  justify-self: center;
 }
 .scale:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #t1 {
@@ -53,9 +67,24 @@ h1 {
   font-weight: bold;
   text-decoration: underline;
 }
-
 .flexdiv {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.div__flex {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.div__grid,
+.div__grid_2 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+.list,
+.p11,
+.titel__h3 {
+  justify-self: center;
 }

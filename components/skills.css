@@ -1,0 +1,43 @@
+.image__grid {
+  display: grid;
+  grid-template-areas:
+    " h2 h2 "
+    "html css"
+    "js react";
+}
+.titel__h2 {
+  grid-area: h2;
+  align-self: start;
+}
+.image__html {
+  grid-area: html;
+  transition: transform 2s;
+  justify-self: center;
+}
+.image__css {
+  grid-area: css;
+  transition: transform 2s;
+  justify-self: center;
+}
+.image__js {
+  grid-area: js;
+  transition: transform 2s;
+  justify-self: center;
+}
+.image__react {
+  grid-area: react;
+  transition: transform 2s;
+  justify-self: center;
+}
+.image__html:hover {
+  transform: rotate(360deg);
+}
+.image__css:hover {
+  transform: rotate(360deg);
+}
+.image__js:hover {
+  transform: rotate(360deg);
+}
+.image__react:hover {
+  transform: rotate(360deg);
+}
